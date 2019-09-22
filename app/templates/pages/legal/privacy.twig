@@ -1,8 +1,14 @@
-{# File Version 1.0 [21.09.2019] #}
+{# File Version 1.1 [22.09.2019] #}
 
 {% extends 'app.twig' %}
 
+{% set privacy_shield ='
+mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert
+welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
+' %}
+
 {% block content %}
+    <!-- v1.1 | 22.09.2019 -->
     <p class="text-center">
         Wir freuen uns dass Sie unsere Website besuchen und bedanken uns f&uuml;r Ihr Interesse.<br>
         Im Folgenden informieren wir Sie &uuml;ber den Umgang mit Ihren personenbezogenen Daten bei Nutzung unserer
@@ -268,69 +274,89 @@
         <li>now.sh (cdn.filli-group.com) von ZEIT, Inc., 1046 Kearny Street, San Francisco, CA 94133 USA.</li>
     </ul>
     <p>
-        Weitere Informationen zum Datenschutz bei Marsble finden Sie in der Datenschutzerklärung des Anbieters unter: <a
-                href='https://www.statically.io/privacy'>https://www.statically.io/privacy</a><br><br>
+        Weitere Informationen zum Datenschutz bei Marsble finden Sie in der Datenschutzerklärung des Anbieters unter:
+        <a href='https://www.statically.io/privacy'>https://www.statically.io/privacy</a>
+        <br>
+        <br>
         Weitere Informationen zum Datenschutz bei Prospect One finden Sie in der Datenschutzerklärung des Anbieters
         unter:
-        <a href='https://www.jsdelivr.com/privacy-policy-jsdelivr-net/'>https://www.jsdelivr.com/privacy-policy-jsdelivr-net/</a><br><br>
-        ZEIT Inc. mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert
-        welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.<br><br>
-        Weitere Informationen zum Datenschutz bei ZEIT finden Sie in der Datenschutzerklärung des Anbieters unter: <a
-                href='https://zeit.co/privacy'>https://zeit.co/privacy</a>
+        <a href='https://www.jsdelivr.com/privacy-policy-jsdelivr-net/'>https://www.jsdelivr.com/privacy-policy-jsdelivr-net/</a>
+        <br>
+        <br>
+        ZEIT Inc. {{ privacy_shield }}
+        <br>
+        <br>
+        Weitere Informationen zum Datenschutz bei ZEIT finden Sie in der Datenschutzerklärung des Anbieters unter:
+        <a href='https://zeit.co/privacy'>https://zeit.co/privacy</a>
     </p>
     <!-- 9.2 | Images | Imgur -->
     <h5><strong>9.2 Imgur</strong></h5>
     <p>
-        Unsere Dienste nutzen Imgur ein Bild Hosting Service von Imgur Inc., 415 Jackson Street, Ste. 200, San
-        Francisco, CA
-        94111 USA.<br><br>
-        Imgur Inc. mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert
-        welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.<br><br>
-        Weitere Informationen zum Datenschutz bei Imgur finden Sie in der Datenschutzerklärung des Anbieters unter: <a
-                href='https://imgur.com/privacy'>https://imgur.com/privacy</a><br>
+        Unsere Dienste nutzen Imgur ein Bild Hosting Service von Imgur Inc., 415 Jackson Street, Ste. 200, San Francisco, CA 94111 USA.
+        <br>
+        <br>
+        Imgur Inc. {{ privacy_shield }}
+        <br>
+        <br>
+        Weitere Informationen zum Datenschutz bei Imgur finden Sie in der Datenschutzerklärung des Anbieters unter:
+        <a href='https://imgur.com/privacy'>https://imgur.com/privacy</a><br>
     </p>
     <!-- 9.3 | Code | GitLab -->
     <h5><strong>9.3 GitLab</strong></h5>
     <p>
-        Unsere Dienste nutzen GitLab ein Sourccode Hosting Service von GitLab B.V., San Francisco, CA USA.<br><br>
-        Weitere Informationen zum Datenschutz bei GitLab finden Sie in der Datenschutzerklärung des Anbieters unter: <a
-                href='https://about.gitlab.com/privacy/'>https://about.gitlab.com/privacy/</a>
+        Unsere Dienste nutzen GitLab ein Sourccode Hosting Service von GitLab B.V., San Francisco, CA USA.
+        <br>
+        <br>
+        Weitere Informationen zum Datenschutz bei GitLab finden Sie in der Datenschutzerklärung des Anbieters unter:
+        <a href='https://about.gitlab.com/privacy/'>https://about.gitlab.com/privacy/</a>
     </p>
     <!-- 9.4 | Code | GitHub -->
     <h5><strong>9.4 GitHub</strong></h5>
     <p>
-        Unsere Dienste nutzen GitHub ein Sourccode Hosting Service von GitHub Inc, 88 Colin P Kelly Jr Street, San
-        Francisco, CA 94107 USA.<br><br>
-        GitHub Inc. mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“
-        zertifiziert
-        welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.<br><br>
-        Weitere Informationen zum Datenschutz bei GitHub finden Sie in der Datenschutzerklärung des Anbieters unter: <a
-                href='https://help.github.com/articles/github-privacy-statement/'>https://help.github.com/articles/github-privacy-statement/</a>
+        Unsere Dienste nutzen GitHub ein Sourccode Hosting Service von GitHub Inc, 88 Colin P Kelly Jr Street, San Francisco, CA 94107 USA.
+        <br>
+        <br>
+        GitHub Inc. {{ privacy_shield }}
+        <br>
+        <br>
+        Weitere Informationen zum Datenschutz bei GitHub finden Sie in der Datenschutzerklärung des Anbieters unter:
+        <a href='https://help.github.com/articles/github-privacy-statement/'>https://help.github.com/articles/github-privacy-statement/</a>
     </p>
     <!-- 9.5 | Google | ReCaptcha -->
     <h5><strong>9.5 Google ReCaptcha</strong></h5>
     <p>
-        Auf unserer Website verwenden wir Google ReCaptcha von Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA
-        94043 USA („Google“).<br>
-        Google ReCaptcha ist ein Webdienst zur Erkennung von Bots z.B. bei Eingaben in Onlineformularen<br><br>
-        Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert
-        welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.<br><br>
-        Weitere Informationen zum Datenschutz bei Google finden Sie in der Datenschutzerklärung des Anbieters unter: <a
-                href='https://www.google.com/policies/privacy/'>https://www.google.com/policies/privacy/</a>
+        Unsere Dienste nutzen Google ReCaptcha von Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA.
+        <br>
+        Google ReCaptcha ist ein Webdienst zur Erkennung von Bots z.B. bei Eingaben in Onlineformularen
+        <br>
+        <br>
+        Google LLC {{ privacy_shield }}
+        <br>
+        <br>
+        Weitere Informationen zum Datenschutz bei Google finden Sie in der Datenschutzerklärung des Anbieters unter:
+        <a href='https://www.google.com/policies/privacy/'>https://www.google.com/policies/privacy/</a>
     </p>
     <!-- 9.6 | Google | Fonts -->
     <h5><strong>9.6 Google Fonts</strong></h5>
     <p>
         Auf unserer Website verwenden wir zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts* die von
-        der
-        Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA („Google“) bereitgestellt werden. <br>
+        Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA bereitgestellt werden. <br>
         Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browser-Cache um Texte und
-        Schriftarten
-        korrekt anzuzeigen.<br><br>
-        Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert
-        welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.<br><br>
-        Weitere Informationen zum Datenschutz bei Google finden Sie in der Datenschutzerklärung des Anbieters unter: <a
-                href='https://www.google.com/policies/privacy/'>https://www.google.com/policies/privacy/</a>
+        Schriftarten korrekt anzuzeigen.
+        <br>
+        <br>
+        Google LLC {{ privacy_shield }}
+        <br>
+        <br>
+        Weitere Informationen zum Datenschutz bei Google finden Sie in der Datenschutzerklärung des Anbieters unter:
+        <a href='https://www.google.com/policies/privacy/'>https://www.google.com/policies/privacy/</a>
+    </p>
+    <!-- 9.7 | Script | Browser Update -->
+    <h5><strong>9.7 Browser-Update.org</strong></h5>
+    <p>
+        Unsere Dienste nutzen Browser-Update.org von Team23 GmbH, Beim Glaspalast 1, 86153 Augsburg, Deutschland.
+        <br>
+        Browser-Update.org informiert Benutzer über Updates für ihren Webbrowser.
     </p>
     <!-- 10. | Rechte des Betroffenen -->
     <h4><strong>10. Rechte des Betroffenen</strong></h4>
@@ -448,8 +474,8 @@
     <p>
         Wir behalten uns vor diese Datenschutzerkl&auml;rung anzupassen damit sie stets den aktuellen rechtlichen
         Anforderungen entspricht oder um &auml;nderungen unserer Leistungen in der Datenschutzerkl&auml;rung umzusetzen
-        z.B.
-        bei der Einf&uuml;hrung neuer Services.<br>
+        z.B. bei der Einf&uuml;hrung neuer Services.
+        <br>
         F&uuml;r Ihren erneuten Besuch gilt dann die neue Datenschutzerkl&auml;rung.
     </p>
 {% endblock %}
