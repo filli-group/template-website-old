@@ -31,3 +31,4 @@
 $app->add($app->getContainer()->get('csrf'));
 $app->add(new App\Middleware\ValidationExceptionMiddleware($container));
 $app->add(new App\Middleware\OldInputMiddleware($container));
+$app->add(new RKA\Middleware\IpAddress(true, []));

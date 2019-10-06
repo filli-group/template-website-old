@@ -46,13 +46,13 @@ final class HomeAction
 
     public function __invoke(Request $request, Response $response, $args)
     {
-        $this->logger->info("Home page action dispatched");
+        $this->logger->info('Home page action dispatched');
 
         $this->view->render($response, 'pages/home.twig', array(
             'title' => 'Coming Soon',
-            'error' => '',
             'css' => 'https://cdn.staticaly.com/gl/filli-group/css/raw/4b353dcb544cb9774c9e2f613dfc46d5b2e95b08/material-dashboard.min.css',
             'bg_img' => 'https://cdn.staticaly.com/img/i.imgur.com/a5ScUSW.jpg',
+            'error' => '',
         ));
         return $response;
     }

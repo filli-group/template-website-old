@@ -105,12 +105,12 @@ $container[App\Action\HomeAction::class] = function ($c) {
     return new App\Action\HomeAction($c->get('view'), $c->get('logger'));
 };
 
-$container[App\Action\ImprintAction::class] = function ($c) {
-    return new App\Action\ImprintAction($c->get('view'), $c->get('logger'));
+$container[App\Action\legal\ImprintAction::class] = function ($c) {
+    return new App\Action\legal\ImprintAction($c->get('view'), $c->get('logger'));
 };
 
-$container[App\Action\PrivacyAction::class] = function ($c) {
-    return new App\Action\PrivacyAction($c->get('view'), $c->get('logger'));
+$container[App\Action\legal\PrivacyAction::class] = function ($c) {
+    return new App\Action\legal\PrivacyAction($c->get('view'), $c->get('logger'));
 };
 
 // -----------------------------------------------------------------------------

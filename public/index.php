@@ -38,7 +38,7 @@ session_start();
 
 // Instantiate the app
 $settings = require __DIR__ . '/../app/settings.php';
-$app = new \Slim\App($settings);
+$app = new App($settings);
 
 // Set up dependencies
 require __DIR__ . '/../app/dependencies.php';
@@ -56,6 +56,7 @@ $capsule->bootEloquent();
 
 // Register Validator
 use Respect\Validation\Validator as v;
+use Slim\App;
 
 v::with('App\\Validation\\Rules\\');
 

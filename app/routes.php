@@ -31,9 +31,8 @@
 $app->get('/', App\Action\HomeAction::class)
     ->setName('homepage');
 $app->group('/legal', function () use ($app) {
-    $app->get('/imprint', App\Action\ImprintAction::class)
-        ->setName('imprint');
-    $app->get('/privacy', App\Action\PrivacyAction::class)
-        ->setName('privacy');
-
+    $app->get('/imprint', App\Action\legal\ImprintAction::class)
+        ->setName('legal.imprint');
+    $app->get('/privacy', App\Action\legal\PrivacyAction::class)
+        ->setName('legal.privacy');
 });

@@ -26,7 +26,7 @@
  *
  */
 
-namespace App\Action;
+namespace App\Action\legal;
 
 use Psr\Log\LoggerInterface;
 use Slim\Http\Request;
@@ -46,7 +46,7 @@ final class PrivacyAction
 
     public function __invoke(Request $request, Response $response, $args)
     {
-        $this->logger->info("Privacy page action dispatched");
+        $this->logger->info('Privacy page action dispatched');
 
         $this->view->render($response, 'pages/legal/privacy.twig', array(
             'title' => 'Datenschutz',
